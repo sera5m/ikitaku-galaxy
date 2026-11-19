@@ -1,0 +1,11 @@
+{
+  "name": "ikitaku-galaxy",
+  "private": true,
+  "description": "Viewer for the concept memory held by ikitaku-engine.",
+  "dependencies": {
+    "ikitaku-engine": "github:sera5m/ikitaku-engine"
+  },
+  "scripts": {
+    "sync-memory": "mkdir -p memory && cp -f node_modules/ikitaku-engine/memory/graph.json memory/graph.json || cp -f ../ikitaku-engine/memory/graph.json memory/graph.json"
+  }
+}
